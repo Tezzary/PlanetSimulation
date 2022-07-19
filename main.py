@@ -26,7 +26,6 @@ class Planet :
 
         self.velocity[0] += totalAppliedForce[0]
         self.velocity[1] += totalAppliedForce[1]
-    #    print(f"Velocity now equals: {self.velocity}, The force being applied this frame is {totalAppliedForce} ")
 
     def applyVelocity(self, timeStep) :
         self.position[0] += self.velocity[0] * timeStep
@@ -72,4 +71,3 @@ while True :
   
 
     pygame.display.update()
-  #  sleep(1000 / 30) 
